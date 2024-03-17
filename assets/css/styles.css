@@ -1,5 +1,19 @@
+body {
+  font-family: "Noto Serif", serif; /* Establece la fuente de la familia "Noto Serif" para todo el contenido */
+}
 h1 {
-  color: red;
+  font-size: larger;
+}
+p {
+  font-size: large;
+}
+
+.bg-purple-color {
+  background-color: #b0529c !important;
+  color: white !important;
+}
+.text-purple-color {
+  color: #b0529c !important;
 }
 
 .top-navbar {
@@ -17,11 +31,83 @@ h1 {
   animation: desplazamiento 20s linear infinite; /* Aplica la animación de desplazamiento */
 }
 .top-navbar span::after {
-    content: attr(data-content); /* Clona el contenido del span */
-    display: inline-block; /* Hace que el contenido clonado se comporte como un bloque en línea */
-    padding-left: 20px; /* Añade un poco de espacio entre los textos */
+  content: attr(data-content); /* Clona el contenido del span */
+  display: inline-block; /* Hace que el contenido clonado se comporte como un bloque en línea */
+  padding-left: 20px; /* Añade un poco de espacio entre los textos */
 }
 @keyframes desplazamiento {
-    from { transform: translateX(100%); } /* Desplazamiento inicial */
-    to { transform: translateX(-100%); } /* Desplazamiento final */
+  from {
+    transform: translateX(100%);
+  } /* Desplazamiento inicial */
+  to {
+    transform: translateX(-100%);
+  } /* Desplazamiento final */
+}
+
+.half-section {
+  display: flex;
+  align-items: center;
+}
+.half-section .content {
+  padding: 0 30px;
+}
+
+.section-title {
+  text-align: center; /* Centra el título */
+  margin-bottom: 40px; /* Espaciado inferior */
+}
+#quienes-somos {
+  background-image: url("../images/QuienesSomos.png"); /* Ruta a tu imagen de fondo */
+  background-size: cover; /* Cubre todo el área */
+  background-position: center; /* Centra la imagen */
+  color: #fff; /* Cambia el color del texto para que sea legible */
+  padding: 100px 0; /* Añade relleno superior e inferior para separar el contenido de los bordes */
+}
+
+.gallery-section {
+  padding: 100px 0; /* Añade relleno superior e inferior para separar el contenido de los bordes */
+}
+.gallery-logo {
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+.gallery-description {
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+.gallery-cta {
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+.gallery-images img {
+  width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+  margin-bottom: 20px; /* Espaciado inferior entre las imágenes */
+}
+
+.visit-section {
+  padding: 100px 0; /* Añade relleno superior e inferior para separar el contenido de los bordes */
+}
+.map-container {
+  height: 400px; /* Establece la altura del contenedor del mapa */
+}
+
+.contact-section {
+  padding: 100px 0; /* Añade relleno superior e inferior para separar el contenido de los bordes */
+}
+
+.footer-section {
+  background-color: #1b52a7; /* Color de fondo del footer */
+  padding: 50px 0; /* Añade relleno superior e inferior para separar el contenido de los bordes */
+  color: #6c757d; /* Color del texto del footer */
+}
+.footer-divider {
+  border-top: 1px solid #dee2e6; /* Línea divisoria */
+  margin-top: 20px; /* Espacio superior */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+.social-icons {
+  font-size: 24px; /* Tamaño de los iconos de redes sociales */
+  margin-top: 20px; /* Espacio superior */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+.social-icons a {
+  color: #6c757d; /* Color de los iconos de redes sociales */
+  margin-right: 15px; /* Espacio derecho entre los iconos */
 }

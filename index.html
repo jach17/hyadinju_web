@@ -32,13 +32,13 @@
       >
     </section>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid ms-5 me-5">
           <a class="navbar-brand" href="#">
             <img src="assets/images/icons/logo.png" alt="" width="70%" />
           </a>
           <div
-            class="collapse navbar-collapse justify-content-center"
+            class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
             <ul class="navbar-nav">
@@ -63,30 +63,345 @@
       </nav>
     </header>
 
-    <section id="destacados">
-      <!-- Aquí va el contenido de la sección de productos destacados -->
+    <section class="half-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Imagen -->
+            <img
+              src="assets/images/people.png"
+              alt="Imagen"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 content text-end">
+            <h2 class="text-purple-color fw-bold">Bienvenido a Hyadi Nju</h2>
+            <br />
+            <br />
+            <p>
+              Déjate llevar por la magia de nuestras creaciones, donde cada
+              puntada cuenta una historia especial. Encuentra la pieza perfecta
+              para darle un toque artesanal y lleno de corazón a tu hogar.
+              <br />
+              <br />
+              <span class="fw-bold"> ¡Explora ahora! </span>
+            </p>
+            <a href="#" class="btn btn-primary bg-purple-color border-0"
+              >Solicita una cotización</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="categorias">
-      <!-- Aquí va el contenido de la sección de categorías -->
+    <section id="quienes-somos" class="py-5">
+      <div class="container">
+        <!-- Título -->
+        <h2 class="section-title fw-bold">¿Quiénes somos?</h2>
+        <div class="row">
+          <!-- Columna 1 -->
+          <div class="col-md-4">
+            <p class="text-end">
+              En HyadiNju, nos apasiona compartir la riqueza cultural de México
+              a través de nuestras artesanías. Desde nuestros humildes comienzos
+              en el corazón de la tradición artesanal mexicana, nos hemos
+              dedicado a preservar y promover la belleza de estas obras maestras
+              bordadas a mano.
+            </p>
+          </div>
+          <!-- Columna 2 -->
+          <div class="col-md-4">
+            <p class="text-center">
+              Cada pieza que ofrecemos en nuestra tienda lleva consigo el legado
+              de generaciones de artesanos dedicados, quienes con habilidad y
+              amor por su oficio crean cada Tenango con el corazón. Nos
+              enorgullece ser un puente entre estos alentosos creadores y
+              aquellos que buscan una conexión más profunda con la cultura y la
+              historia de México.
+            </p>
+          </div>
+          <!-- Columna 3 -->
+          <div class="col-md-4">
+            <p class="text-start">
+              En HyadiNju, valoramos la autenticidad, la calidad y el respeto
+              por las comunidades artesanales que colaboran con nosotros. Nos
+              esforzamos por ofrecer una experiencia de compra excepcional y un
+              apoyo continuo a nuestros artesanos, para asegurar que cada pieza
+              que adquieres cuente una historia verdadera y perdure en el
+              tiempo.
+            </p>
+          </div>
+        </div>
+        <!-- Texto debajo de las preguntas -->
+        <p class="text-center">
+          Gracias por unirte a nosotros en este viaje lleno de color y
+          tradición.
+          <br />
+          <span class="fw-bold"> ¡Bienvenido a la familia HyadiNju! </span>
+        </p>
+      </div>
     </section>
 
-    <section id="invitacion-comprar">
-      <!-- Aquí va el texto para invitar a comprar -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1 (30%) -->
+          <div class="col-md-4">
+            <!-- Logo -->
+            <div class="gallery-logo">
+              <img
+                src="assets/images/icons/logo.png"
+                alt="Logo"
+                class="img-fluid"
+              />
+            </div>
+            <!-- Texto descriptivo -->
+            <div class="gallery-description">
+              <p>
+                Descubre la magia de los Tenangos. Sumérgete en nuestra
+                colección única de arte bordado a mano, donde cada pieza cuenta
+                una historia especial. Encuentra tu tesoro artesanal y lleva a
+                casa un pedacito de tradición mexicana. Explora nuestra galería
+                y haz tu compra hoy mismo.
+              </p>
+            </div>
+            <!-- Botón de llamada a la acción -->
+            <div class="gallery-cta">
+              <a href="#" class="btn bg-purple-color btn-primary border-0"
+                >Ordena tu favorito</a
+              >
+            </div>
+          </div>
+          <!-- Columna 2 (70%) -->
+          <div class="col-md-8 gallery-images">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/images/products/tenango-bordado-1.png"
+                    class="d-block"
+                    style="max-height: 500px; width: auto"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/products/tenango-bordado-2.png"
+                    class="d-block"
+                    style="max-height: 500px; width: auto"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/products/tenango-bordado-3.png"
+                    class="d-block"
+                    style="max-height: 500px; width: auto"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="ubicacion">
-      <!-- Aquí va el texto para la sección de ubicación -->
+    <section class="visit-section">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1 (70%) -->
+          <div class="col-md-7">
+            <!-- Mapa -->
+            <div class="map-container">
+              <!-- Aquí inserta tu fragmento de mapa -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.093597714149!2d-98.22751152552465!3d20.337751681144265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d0efa46e3bd6c3%3A0xeaed4e60c779aab9!2sCooperativa%20Hyadi%20Nj%C3%BC!5e0!3m2!1ses-419!2smx!4v1710664145876!5m2!1ses-419!2smx"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Columna 2 (30%) -->
+          <div class="col-md-5">
+            <!-- Título -->
+            <h2 class="text-purple-color">Visítanos</h2>
+            <!-- Texto descriptivo -->
+            <p>
+              Nos encontrarás en el corazón de Tenango de Doria, en la calle 16
+              de Enero número 17, en el Centro. Nuestra ubicación, en este
+              encantador pueblo, es donde la tradición y la artesanía se
+              entrelazan para dar vida a nuestros hermosos Tenangos. <br />
+              <span class="fw-bold">¡Esperamos tu visita!</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contacto">
-      <!-- Aquí va el texto para la sección de contacto -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1 -->
+          <div class="col-md-12 text-center">
+            <!-- Título -->
+            <h2 class="text-purple-color">Contacto</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Columna 1 (30%) -->
+          <div class="col-md-4">
+            <!-- Texto informativo -->
+            <p>
+              ¿Te ha enamorado algún producto de nuestra colección? ¿O quizás
+              tienes en mente un pedido a medida? <br />
+              <span class="fw-bold"
+                >¡Estamos aquí para hacer tus deseos realidad!</span
+              >
+            </p>
+            <p>
+              Para ordenar un producto que te haya cautivado o para solicitar un
+              pedido personalizado, por favor contáctanos utilizando cualquiera
+              de los siguientes métodos. Estaremos encantados de ayudarte a
+              encontrar la pieza perfecta o a crear una especialmente para ti.
+              ¡Esperamos con ansias trabajar contigo para hacer realidad tus
+              sueños artesanales!
+            </p>
+          </div>
+          <!-- Columna 2 (70%) -->
+          <div class="col-md-8">
+            <!-- Formulario -->
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Ingrese su nombre"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Ingrese su correo electrónico"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  rows="5"
+                  placeholder="Escriba su mensaje"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn bg-purple-color"
+                style="width: 100%"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <!-- Aquí va el contenido del footer -->
+    <footer class="footer-section text-center">
+      <!-- Añade la clase text-center para centrar todos los elementos -->
+      <div class="container">
+        <!-- Navbar -->
+
+        <!-- Añade la clase justify-content-center para centrar la navbar -->
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Inicio</a>
+          <a class="navbar-brand text-white" href="#">¿Quienes somos?</a>
+          <a class="navbar-brand text-white" href="#">Comprar</a>
+          <a class="navbar-brand text-white" href="#">Ubicación</a>
+          <a class="navbar-brand text-white" href="#">Contacto</a>
+          <!-- Agrega aquí los elementos de la navbar si es necesario -->
+        </div>
+
+        <!-- Título "Cómo contactarnos" -->
+        <h5 class="mt-4 text-white">Cómo contactarnos</h5>
+        <!-- Texto informativo -->
+        <p class="text-white">
+          Estamos ubicados en el corazón de Tenango de Doria, en la siguiente
+          dirección: 16 de Enero 17, Centro, 43480 Tenango de Doria, Hgo. <br />
+          Envíanos un correo electrónico a [correo electrónico] con los detalles
+          de tu pedido o consulta. <br />
+          Llámanos al 555-555-55-55 para hablar directamente con nuestro equipo
+          y discutir tus necesidades.
+        </p>
+        <!-- Redes sociales -->
+        <div class="social-icons justify-content-center">
+          <!-- Añade la clase justify-content-center para centrar los iconos de redes sociales -->
+          <a href="#">
+            <img
+              src="assets/images/icons/icon_wa.png"
+              alt="Imagen"
+              class="img-fluid"
+          /></a>
+          <a href="#">
+            <img
+              src="assets/images/icons/icon_ig.png"
+              alt="Imagen"
+              class="img-fluid"
+          /></a>
+          <a href="#">
+            <img
+              src="assets/images/icons/icon_fb.png"
+              alt="Imagen"
+              class="img-fluid"
+          /></a>
+        </div>
+        <!-- Línea divisoria -->
+        <div class="footer-divider"></div>
+        <!-- Derechos reservados -->
+        <p class="text-white">
+          Cooperativa HyadinJu 2024 Todos los derechos reservados.&copy; <br />
+          Developed by DevSolutions <br />
+          Animations
+          <a href="http://www.freepik.com">Designed by Freepik</a>
+        </p>
+      </div>
     </footer>
-
     <script src="assets/js/script.js"></script>
   </body>
 </html>
