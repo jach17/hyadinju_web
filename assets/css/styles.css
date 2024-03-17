@@ -1,3 +1,27 @@
 h1 {
-    color: red;
+  color: red;
+}
+
+.top-navbar {
+  background-color: #f6e0e0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden; /* Habilita el desplazamiento horizontal */
+  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+  position: relative; /* Agregado para posicionar el texto clonado */
+}
+
+.top-navbar span {
+  display: inline-block; /* Hace que el span se comporte como un bloque en línea */
+  animation: desplazamiento 20s linear infinite; /* Aplica la animación de desplazamiento */
+}
+.top-navbar span::after {
+    content: attr(data-content); /* Clona el contenido del span */
+    display: inline-block; /* Hace que el contenido clonado se comporte como un bloque en línea */
+    padding-left: 20px; /* Añade un poco de espacio entre los textos */
+}
+@keyframes desplazamiento {
+    from { transform: translateX(100%); } /* Desplazamiento inicial */
+    to { transform: translateX(-100%); } /* Desplazamiento final */
 }
