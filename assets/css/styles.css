@@ -111,3 +111,38 @@ p {
   color: #6c757d; /* Color de los iconos de redes sociales */
   margin-right: 15px; /* Espacio derecho entre los iconos */
 }
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Ajuste del logo en la barra de navegación */
+  .navbar-brand img {
+    width: 50%; /* Reducir el tamaño del logo */
+  }
+
+  /* Alinear elementos de la barra de navegación en pantallas pequeñas */
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px; /* Espacio entre elementos */
+  }
+
+  /* Ajuste del contenido en la sección de bienvenida */
+  .half-section .col-md-6 {
+    text-align: center;
+  }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 576px) {
+  /* Ajuste del logo en la barra de navegación */
+  .navbar-brand img {
+    width: 40%; /* Reducir aún más el tamaño del logo */
+  }
+
+  /* Ajuste del contenido en la sección de bienvenida */
+  .half-section .col-md-6 h2 {
+    font-size: 24px; /* Reducir el tamaño del título */
+  }
+}
